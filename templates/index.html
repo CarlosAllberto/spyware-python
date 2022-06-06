@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>live webcam</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            text-align: center;
+        }
+
+        img {
+            margin: auto;
+            justify-content: center;
+            display: block;
+            border: 1px solid green;
+            width: 600px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        footer p {
+            font-size: 10px;
+            padding: 1rem;
+            color: green;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+        footer p:hover {
+            color: red;
+        }
+
+        @media (max-width: 600px) {
+            img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Webcam Live</h1>
+            <img id="bg" src="{{ url_for('video_feed') }}" alt="cam">
+        </div>
+    </main>
+    <footer>
+        <a href="https://www.facebook.com/profile.php?id=100080730216339" target="_blank"><p>SH1N1G4M1</p></a>
+    </footer>
+</body>
+</html>
