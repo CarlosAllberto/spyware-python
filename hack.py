@@ -21,13 +21,6 @@ if len(sys.argv) < 3:
 lhost = str(sys.argv[1])
 lport = int(sys.argv[2])
 
-"""
-user = subprocess.run("id", shell=True, stdout=subprocess.PIPE)
-if not "root" in str(user.stdout):
-    print("without superuser permission try again with sudo\n")
-    quit()
-"""
-
 sock = socket(AF_INET, SOCK_STREAM)
 
 system("clear")
