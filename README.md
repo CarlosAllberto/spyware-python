@@ -22,14 +22,14 @@
 
 # Spyware with Python3
 
-[+] keylogger
-[+] webcam take
-[+] webcam live
-[+] check root
-[+] download
-[+] upload
-[ ] screenshot
-[ ] vnc
+- [x] keylogger
+- [x] webcam take
+- [x] webcam live
+- [x] check root
+- [x] download
+- [x] upload
+- [ ] screenshot
+- [ ] vnc
 
 # Run:
 
